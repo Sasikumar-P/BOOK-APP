@@ -1,0 +1,33 @@
+
+
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+
+	 {% load staticfiles %}
+
+</head>
+<body>
+    
+
+<a href="/postnew/">GET</a></div>
+<a href="/postnew1/">POST</a></div>
+<a href="/postnew2/">UPDATE</a></div>
+<a href="/postnew3/">DELETE</a></div>
+
+
+
+            {% block content %}
+            {% endblock %}
+         
+</body>
+<script src="{% static 'js/angular.js' %}"></script>
+<script src="{% static 'js/angular-route.js' %}"></script>
+<script src="{% static 'js/angular.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/FirstController.js' %}"></script>
+<script src="{% static 'js/SecondController.js' %}"></script>
+<script src="{% static 'js/ThirdController.js' %}"></script>
+
+</html>
